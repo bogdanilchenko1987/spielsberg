@@ -32,7 +32,7 @@ const Gallery: React.FC = () => {
       <div className={styles.grid}>
         {prizes.map(({ src, alt }) => (
           <div key={alt} className={styles.card}>
-            <img src={src} alt={alt} className={styles.image} />
+            <img loading="lazy" src={src} alt={alt} className={styles.image} />
             <p className={styles.caption}>{alt}</p>
           </div>
         ))}
